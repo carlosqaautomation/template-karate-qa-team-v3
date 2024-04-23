@@ -28,3 +28,9 @@ Feature: Ejemplos practicos Karate
     And path "/posts/" + id
     When method get
     Then status 200
+
+    Scenario: Test04 - Delete Routes
+      Given url 'https://jsonplaceholder.typicode.com/'
+      And path '/posts/1'
+      When method delete
+      Then status 200

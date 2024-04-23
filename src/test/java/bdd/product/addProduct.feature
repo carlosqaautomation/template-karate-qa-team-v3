@@ -33,4 +33,4 @@ Feature: Ejemplos practicos Karate
     Given url "https://jsonplaceholder.typicode.com"
     And path "/posts/1"
     When method delete
-    Then status 201
+    Then status 200
